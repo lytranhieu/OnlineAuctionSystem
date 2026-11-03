@@ -1,0 +1,45 @@
+@startuml
+ title Online Auction System - OOP foundation
+ skinparam classAttributeIconSize 0
+ abstract class Entity { - id : String
++ getId() : String }
+ abstract class User { - username : String
+- salt : String
+- passwordHash : String
++ getRole() : Role }
+ class Bidder
+ class Seller
+ class Admin
+ abstract class Item { - name : String
+- description : String
++ getCategory() : Category }
+ class Electronics
+ class Art
+ class Vehicle
+ class ItemFactory <<Factory Method>> { + create(category, id, name, description) : Item }
+ class Auction { - item : Item
+- seller : String
+- startingPrice : long
+- startsAt : long
+- endsAt : long
+- status : Status }
+ class BidTransaction { + bidder : String
++ amount : long
++ at : long
++ automatic : boolean }
+ class AuctionManager <<Singleton>> { - INSTANCE : AuctionManager
++ getInstance() : AuctionManager
++ register(auction) : void }
+ Entity <|-- User
+ User <|-- Bidder
+ User <|-- Seller
+ User <|-- Admin
+ Entity <|-- Item
+ Item <|-- Electronics
+ Item <|-- Art
+ Item <|-- Vehicle
+ Entity <|-- Auction
+ Auction *-- Item
+ ItemFactory ..> Item : creates
+ AuctionManager o-- Auction : stores
+ @enduml

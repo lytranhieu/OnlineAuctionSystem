@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      alignment="CENTER" spacing="16" prefWidth="700" prefHeight="420"
+      style="-fx-background-color: #f4f7fc; -fx-padding: 40;">
+  <children>
+    <Label text="ONLINE AUCTION SYSTEM"
+           style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #1e4270;" />
+    <Label text="Hello JavaFX!"
+           style="-fx-font-size: 22px; -fx-text-fill: #2563eb;" />
+    <Label text="Giao diện khởi động để học JavaFX và SceneBuilder."
+           style="-fx-font-size: 15px; -fx-text-fill: #475569;" />
+    <Label text="Các màn hình đăng nhập và đấu giá sẽ được bổ sung theo lộ trình."
+           style="-fx-font-size: 13px; -fx-text-fill: #64748b;" />
+  </children>
+</VBox>
