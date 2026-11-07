@@ -1,6 +1,6 @@
 package com.auction.model;
 
-/** Polymorphic item: each subtype provides its category. */
+/** Đa hình: mỗi kiểu con cung cấp loại của chính nó. */
 public abstract class Item extends Entity {
     private String name;
     private String description;

@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-/** Singleton: stores demo auction objects in memory for the initial project skeleton. */
+/** Singleton: lưu trữ các đối tượng đấu giá mẫu trong bộ nhớ cho khung dự án ban đầu. */
 public final class AuctionManager {
     private static final AuctionManager INSTANCE = new AuctionManager();
     private final Map<String, Auction> auctions = new LinkedHashMap<>();
