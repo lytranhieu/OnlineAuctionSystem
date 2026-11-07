@@ -1,6 +1,5 @@
 package com.auction.model;
 
-/** Basic auction entity. Bidding and lifecycle logic will be implemented in later milestones. */
 public final class Auction extends Entity {
     private final Item item;
     private final String seller;
