@@ -1,6 +1,5 @@
 package com.auction.model;
 
-/** Factory Method: các lớp khởi tạo (creator) ghi đè phương thức tạo đối tượng, trong khi các đối tượng gọi (caller) sử dụng kiểu cơ sở. */
 public abstract class ItemFactory {
     public abstract Item create(String id, String name, String description);
 
