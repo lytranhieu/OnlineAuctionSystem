@@ -2,7 +2,6 @@ package com.auction.model;
 
 import java.util.Objects;
 
-/** Base class for domain objects with a stable identifier. */
 public abstract class Entity {
     private final String id;
 
